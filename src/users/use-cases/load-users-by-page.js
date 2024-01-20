@@ -7,11 +7,13 @@ import { User } from "../models/user";
  * @returns {Promise<User[]>}
  */
 export const loadUsersByPage = async( page = 1 ) => {
-    const url = `${ import.meta.env.VITE_PAGE_URL }users?_page=${ page }`;
+
+    const url = `${ import.meta.env.VITE_PAGE_URL }/users?_page=${ page }`;
     const response = await fetch( url );
     const resolve = await response.json();
+    const pages = resolve.pages;
 
     const users = resolve.data.map( localhostUserToModel );
 
-    return users;
+    return { users, pages };
 }
