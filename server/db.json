@@ -449,6 +449,27 @@
       "first_name": "Mcbride",
       "last_name": "Woodward",
       "gender": "male"
+    },
+    {
+      "id": "19cc",
+      "isActive": true,
+      "balance": 1500,
+      "first_name": "David",
+      "last_name": "García"
+    },
+    {
+      "id": "dcdd",
+      "isActive": true,
+      "balance": 1500,
+      "first_name": "Natalia",
+      "last_name": "Mutis"
+    },
+    {
+      "id": "6f52",
+      "isActive": true,
+      "balance": 0,
+      "first_name": "",
+      "last_name": ""
     }
   ]
 }
